@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#daily-summary">Daily Summary</a></li>
+                <li><a href="#historical-trends">Historical Trends</a></li>
+
+            </ul>
+        </nav>
+        <h1>Weather Monitoring System</h1>
+    </header>
+
+    <main class="container">
+        <!-- Daily Weather Summary Section -->
+        <section id="daily-summary">
+            <h2>Daily Weather Summaries</h2>
+            <div id="summary-container" class="card-container">
+                <!-- Weather data will be dynamically inserted here -->
+                <div class="card">
+                    <h3>Location: City Name</h3>
+                    <p>Temperature: 25°C</p>
+                    <p>Humidity: 60%</p>
+                    <p>Condition: Sunny</p>
+                </div>
+                <!-- Add more cards as necessary -->
+            </div>
+        </section>
+
+        <!-- Historical Trends Section -->
+        <section id="historical-trends">
+            <h2>Historical Trends</h2>
+            <canvas id="trendChart"></canvas>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Weather Monitoring System</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="charts.js"></script>
+</body>
+
+</html>
